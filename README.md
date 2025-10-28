@@ -2,7 +2,7 @@
 
 ## ✨ Sobre o Projeto
 
-O site da ** Mega Laboratório** foi desenvolvido para ser o principal canal digital de comunicação da empresa, referência em **Controle Tecnológico, Ensaios em Concreto, Solos e Argamassas** no interior de São Paulo. O site visa consolidar a credibilidade da Mega no mercado da Construção Civil, Engenharia e Pisos Industriais.
+O site da **Mega Laboratório** foi desenvolvido para ser o principal canal digital de comunicação da empresa, referência em **Controle Tecnológico, Ensaios em Concreto, Solos e Argamassas** no interior de São Paulo. O site visa consolidar a credibilidade da Mega no mercado da Construção Civil, Engenharia e Pisos Industriais.
 
 ## 🎯 Funcionalidades e Seções Principais
 
