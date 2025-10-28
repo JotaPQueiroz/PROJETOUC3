@@ -1,0 +1,110 @@
+
+.secao_projetos {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.cabecalho_projetos {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rotulo_secao {
+   
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 5px 0;
+    
+}
+
+.titulo_principal_secao {
+     padding-top: 2%;
+    font-size: 2.2em;
+    font-weight: bold;
+    color:#e59441;
+    margin: 0 0 10px 0;
+    
+}
+
+.descricao_secao {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+
+.grade_projetos {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+
+.cartao_projeto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.cartao_projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.container_imagem_projeto {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    background-color: #e59441;
+    border-radius: 4px;
+}
+
+.imagem_projeto {
+    width: 100%;
+    aspect-ratio: 3 / 2; 
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+
+.cartao_projeto:hover .imagem_projeto {
+    transform: scale(1.05); 
+}
+
+.titulo_projeto {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+@media (max-width: 992px) {
+    .grade_projetos {
+       
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .secao_projetos {
+        padding: 60px 5%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .grade_projetos {
+       
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .titulo-principal_secao {
+        font-size: 1.8em;
+    }
+}

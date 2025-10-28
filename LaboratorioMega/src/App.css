@@ -1,9 +1,21 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
- 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
+main {
+  padding: 40px;
+  text-align: center;
+  color: #555;
+}
 
+button, img {
+  border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth; 
+}

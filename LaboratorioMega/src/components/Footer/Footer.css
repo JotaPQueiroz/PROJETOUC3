@@ -1,0 +1,185 @@
+.container_rodape {
+    background-color: #f7f7f7;
+    padding: 60px 5%;
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+.principal_rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ffe294;
+}
+
+
+.logo_rodape {
+    margin-top: 15%;
+    width: 90%;
+    height: 60%;
+}
+
+
+.coluna_rodape {
+    flex-grow: 1;
+    max-width: 250px;
+    min-width: 150px;
+}
+
+
+.coluna_contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    max-width: 350px;
+}
+
+
+.titulo_rodape {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.coluna_rodape p,
+.coluna_rodape li,
+.coluna_rodape a {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.coluna_rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna_rodape a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.coluna_rodape a:hover {
+    text-decoration: underline;
+    color: #e59441;
+}
+
+.detalhes_contato {
+    margin-top: 30px;
+}
+
+
+.rodape_inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.rodape_inferior a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+.rodape_inferior a:hover {
+    text-decoration: underline;
+    color: #e59441;
+}
+
+
+.links_politicas span {
+    margin: 0 10px;
+}
+
+.voltar_topo {
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    .principal_rodape {
+
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .coluna_rodape {
+        max-width: 45%;
+        min-width: 250px;
+        text-align: left;
+    }
+
+    .coluna_marca {
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+
+    .coluna_contato {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .logo_rodape {
+        margin-top: 0;
+    }
+
+    .rodape_inferior {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding-top: 30px;
+    }
+
+    .rodape_inferior a {
+        margin: 0 10px;
+    }
+
+    .links_politicas {
+        order: 1;
+    }
+
+    .info_direitos {
+        order: 2;
+    }
+
+    .voltar_topo {
+        order: 3;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .principal_rodape {
+
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .coluna_rodape {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .coluna_marca {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logo_rodape {
+        width: 60%;
+        height: auto;
+    }
+}

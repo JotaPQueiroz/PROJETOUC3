@@ -1,0 +1,251 @@
+
+.seca_hero {
+    
+    position: relative;
+    width: 100%;
+    height: 60vh; 
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+
+.fundo_hero {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: url(../../assets/Background.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.sobreposicao_hero {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+
+.conteudo_hero {
+    margin-top: 20%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-left: 5%; 
+    padding-bottom: 50px;
+    max-width: 1200px;
+    width: 100%;
+    height: 50vh;
+}
+
+.titulo_principal_hero {
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 15px 0;
+    margin-top: 10%;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.subtitulo_principal_hero {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.acoes_hero {
+    display: flex;
+    gap: 15px;
+}
+
+.botao {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s;
+    border-radius: 4px; 
+}
+
+.acoes_hero button a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+.botao_primario {
+    background-color: #e59441;
+    color: white;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; 
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+
+
+
+.secao_destaque {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+        "header"
+        "content";
+    gap: 20px;
+}
+
+
+.barra_cabecalho_destaque {
+    grid-area: header;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.rotulo_cabecalho {
+    font-size: 1em;
+    font-weight: bolder;
+    color: #666; 
+    margin-bottom: 5px;
+}
+
+.titulo_cabecalho {
+     padding-top: 2%;
+    font-size: 2.2em;
+    font-weight: bold;
+    color:#e59441;
+    margin: 0 0 10px 0;
+}
+
+
+.colunas_conteudo_destaque {
+    grid-area: content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.coluna_texto_destaque {
+    flex: 1;
+    padding-right: 50px;
+    max-width: 55%; 
+    text-align: left;
+}
+
+.paragrafo_secao {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444; 
+    margin-bottom: 1.5em;
+}
+
+.coluna_imagem_destaque {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagem_destaque {
+    width: 100%;
+    height: 45vh; 
+    display: block;
+    object-fit: cover;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media (max-width: 992px) {
+   
+    .titulo_principal_hero {
+        font-size: 3rem;
+    }
+    
+  
+    .colunas_conteudo_destaque {
+        flex-direction: column; 
+        gap: 40px;
+    }
+    
+    .coluna_texto_destaque,
+    .coluna_imagem_destaque {
+        max-width: 100%; 
+        padding-right: 0;
+    }
+
+    .imagem_destaque {
+        height: auto; 
+    }
+}
+
+
+@media (max-width: 768px) {
+  
+    .secao_hero,
+    .secao_destaque {
+        padding: 40px 20px;
+    }
+
+   .conteudo_hero{
+   margin-top: 30%;}
+
+    .secao_hero {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .titulo_principal_hero {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .subtitulo_principal_hero {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .acoes_hero {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .botao {
+        width: 100%; 
+    }
+
+ 
+    .titulo_cabecalho {
+        font-size: 1.5em;
+    }
+    
+    .paragrafo_secao {
+        font-size: 1rem;
+    }
+}

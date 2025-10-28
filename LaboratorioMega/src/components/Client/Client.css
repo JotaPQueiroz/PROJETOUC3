@@ -1,0 +1,84 @@
+.secao_clientes {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+
+.cabecalho_clientes {
+    margin-bottom: 50px;
+    
+}
+
+.titulo_secao{
+    
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #e59441; 
+}
+
+.rotulo_secao{
+
+    font-size: 1em;
+    font-weight: bolder;
+    color: #666; 
+    margin-bottom: 5px;
+}
+
+
+.grade_logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.item_logo_cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 80px;
+}
+
+.imagem_logo_cliente {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    filter: grayscale(0%) contrast(100%);
+    transition: filter 0.5s ease, opacity 0.3s;
+}
+
+.imagem_logo_cliente:hover {
+
+    filter: grayscale(100%) contrast(150%);
+    opacity: 0.8;
+}
+
+.placeholder_logo {
+    color: #999;
+    font-size: 0.8em;
+    font-style: italic;
+    border: 1px dashed #ccc;
+    padding: 5px 10px;
+}
+
+
+
+@media (max-width: 992px) {
+    .grade_logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grade_logos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
