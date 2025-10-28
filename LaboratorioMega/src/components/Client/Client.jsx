@@ -1,6 +1,6 @@
 
 import './Client.css';
-import logo1 from '../../assets/LogoBasepisos.png';
+import logo1 from '../../assets/logobasepisos.png';
 import logo2 from '../../assets/GNPlogo.png';
 import logo3 from '../../assets/LogoMultimasterPisos.png';
 
